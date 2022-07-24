@@ -1,0 +1,16 @@
+micronaut:
+  application:
+    name: vehicleService
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/curso
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: '123456Pwd@'
+    schema-generate: CREATE_DROP
+    dialect: MYSQL
+netty:
+  default:
+    allocator:
+      max-order: 3
+jpa.default.properties.hibernate.hbm2ddl.auto: update
